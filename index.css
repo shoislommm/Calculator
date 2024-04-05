@@ -6,7 +6,7 @@ body {
     justify-content: center;
     font-family: 'Roboto';
     font-weight: 100;
-    margin-top: 1em;
+    margin-top: 3.5em;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -42,18 +42,17 @@ p {
     flex-wrap: wrap;
     flex-direction: row;
     line-height: 65px;
-   
+
 }
 
 .button {
     box-sizing: border-box;
     width: 25%;
-    background-color: #ccc;
     text-align: center;
     cursor: pointer;
     user-select: none;
-    border: 0.01em solid #333;
-
+    border-top: 0.01em solid #333;
+    border-left: 0.01em solid #333;
 }
 
 .double {
@@ -61,14 +60,26 @@ p {
 }
 
 .grey {
-    background: #AAAAAA;
+    background: #aaaaaa;
+}
+
+.grey:active {
+    background-color: #b8b8b8;
 }
 
 .light-grey {
-    background: #CCCCCC;
+    background: #cccccc;
+}
+
+.light-grey:active {
+    background-color: #d6d6d6;
 }
 
 .orange {
     background: #FF9500;
     color: #FFFFFF;
+}
+
+.orange:active {
+    background-color: #ffaa32;
 }

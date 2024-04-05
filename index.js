@@ -25,7 +25,7 @@ document.querySelector('.buttons').addEventListener("click", (event) => {
     // если нажата кнопка AC clearAll
     if (event.target.classList.contains('AC')) return;
 
-    out.textContent = '0';
+    out.textContent = '';
 
     // получение нажатой кнопки
     const key = event.target.textContent;
@@ -58,16 +58,15 @@ document.querySelector('.buttons').addEventListener("click", (event) => {
     }
 
     // если нажата клавиша +/-
-    if (reverse.includes(key) && (a !== '' || b !== '')) {
-        if(sign === '') {
-            a = `-${a}`;
+    if (reverse.includes(key)) {
+        if (sign === '') {
+            a = -a;
             out.textContent = a;
         } else {
-            b = `-${b}`;
+            b = -b;
             out.textContent = b;
         }
-
-        return;
+        return
     }
 
     // если нажато =
